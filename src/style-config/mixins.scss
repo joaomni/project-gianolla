@@ -13,14 +13,26 @@
     }
 }
 
-@mixin medium-screen {
-    @media only screen and (min-width: 1024px) {
+@mixin large-screen {
+    @media only screen and (min-width: 1441px) {
         @content;
     }
 }
 
-@mixin small-screen {
-    @media only screen and (min-width: 768px) {
+@mixin computador-screen {
+    @media only screen and (min-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin laptop-screen {
+    @media only screen and (min-width: 900px) {
+        @content;
+    }
+}
+
+@mixin celular-screen {
+    @media only screen and (min-width: 600px) {
         @content;
     }
 }

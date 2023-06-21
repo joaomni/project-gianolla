@@ -6,14 +6,16 @@
     position: relative;
     display: flex;
     justify-content: center;
-    @include small-screen {
+    @include laptop-screen {
         padding: 100px 0;
     }
     &.dark {
         background-color: $black;
+        color: $white;
     }
     &.light {
-        background-color: $black-light;
+        background-color: $white;
+        color: $black;
     }
     .content {
         width: 100%;
@@ -22,13 +24,12 @@
         display: flex;
         align-items: center;
         flex-direction: column;
-        @include small-screen {
+        @include laptop-screen {
             width: 1200px;
         }
         .section-title {
             width: 100%;
             text-align: center;
-            color: $white;
             max-width: 500px;
         }
     }

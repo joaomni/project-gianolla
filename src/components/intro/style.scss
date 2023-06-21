@@ -5,7 +5,7 @@
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    background: linear-gradient(121deg, #2559cd 9%, #1c4cc8 41%, #0f38c1 88%);
+    background-color: rgb(0, 0, 0, .5);
     position: relative;
     display: flex;
     justify-content: center;
@@ -13,41 +13,79 @@
         width: 100%;
         height: 100%;
         position: absolute;
-        background-image: url("../../images/vector-background.png");
+        background-image: url("../../images/main-background.jpg");
         background-size: cover;
         background-position: center right;
         background-repeat: no-repeat;
-        z-index: 0;
-        opacity: 0.4;
-        @include small-screen {
+        opacity: 58%;
+        z-index: -1;
+        @include laptop-screen {
             background-position: center center;
+            
         }
     }
-    .cloud {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 300%;
-        z-index: 2;
-        @include small-screen {
+    .headline-content {
+        margin-top: 1rem;
+        text-align: center;
+        color: white;
+
+        max-width: 1200px;
+        margin-right: auto;
+        margin-left: auto;
+
+        text-shadow: black 0.1em 0.1em 0.2em;
+        line-height: 2rem;
+        @include laptop-screen {
             width: 100%;
+            padding: 3rem;
         }
     }
-    .cloud-soft {
-        z-index: 1;
-        mix-blend-mode: soft-light;
-        @include small-screen {
-            width: 100%;
+    h1 {
+        font-size: 4rem;
+        letter-spacing: 1px;
+        line-height: 4rem;
+        @include laptop-screen {
+            font-size: 3rem;
         }
     }
-    .content {
+    p {
+        font-size: 1.5rem;
+        font-weight: 500;
+        letter-spacing: 2px;
+        line-height: 2rem;
+        @include laptop-screen {
+            padding: 0;
+        }
+    }
+    .vsl {
+        margin-top: 4rem;
         width: 100%;
-        padding: 0 20px;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        @include small-screen {
-            width: 1200px;
-        }
+        height: 360px;
+        padding: 0px 250px 0px 250px;
     }
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
+    .pay {
+        margin-top: 2.5rem;
+    }
+    button {
+        border: none;
+        border-radius: 14px;
+        width: auto;
+
+        background-color: #3DD552;
+        color: white;
+        padding: 0.5rem 2.5rem 0.5rem 2.5rem;
+
+        font-size: 2rem;
+        font-weight: 700;
+        text-shadow: 0px 0px 9px rgba(0,0,0,0.3);
+
+        box-shadow: 0px 0px 3px 0px #02FB14;
+    }
+        button:focus {
+            background-color: #6CFF80;
+        }
 }
