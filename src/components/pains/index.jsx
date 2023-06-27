@@ -9,26 +9,23 @@ import { faCircleXmark } from '@fortawesome/free-solid-svg-icons'
 
 const Pain = () => {
   return (
-    <Section id="pains" title="Chegou a hora de mudar" background="light">
+    <Section id="pains" title="" background="light">
         <div className="pain-content">
 
           <div className="text">
-            <strong>
-              Foi entendendo e, mais do que isso, vivendo o dia a dia do consultório, que pude
-              perceber a real necessidade de mercado que muitos dos meus pacientes se
-              queixavam. Com isso, as reais lacunas que precisam ser preenchidas ficaram muito
-              claras para mim.
-              <br />
-              Veja se você consegue se perceber nessas situações:
-            </strong>
+            <h1>
+              Sem dietas malucas, sem restrição à toa e sem estresse. 
+              Estamos aqui para descomplicar a sua rotina e desbloquear 
+              de vez <span>seu emagrecimento</span>.
+            </h1>
           </div>
 
           <div className="pains">
             <ul>
-              <li><FontAwesomeIcon icon={faCircleXmark} size="xl" style={{color: "#e0bb8d",}} /> Não tem acesso a um profissional de qualidade em sua cidade</li>
-              <li><FontAwesomeIcon icon={faCircleXmark} size="xl" style={{color: "#e0bb8d",}} /> Não tem tempo devido uma rotina muito corrida para passar por uma consulta presencial</li>
-              <li><FontAwesomeIcon icon={faCircleXmark} size="xl" style={{color: "#e0bb8d",}} /> Não se sente a vontade em passar em consulta presencial ou online</li>
-              <li><FontAwesomeIcon icon={faCircleXmark} size="xl" style={{color: "#e0bb8d",}} /> Não conseguiu resultado com nenhuma dieta milagrosa</li>
+              <li><FontAwesomeIcon icon={faCircleXmark} size="xl" style={{color: "#bc9458",}} /> Não tem acesso a um profissional de qualidade em sua cidade</li>
+              <li><FontAwesomeIcon icon={faCircleXmark} size="xl" style={{color: "#bc9458",}} /> Não tem tempo devido uma rotina muito corrida para passar por uma consulta presencial</li>
+              <li><FontAwesomeIcon icon={faCircleXmark} size="xl" style={{color: "#bc9458",}} /> Não se sente a vontade em passar em consulta presencial ou online</li>
+              <li><FontAwesomeIcon icon={faCircleXmark} size="xl" style={{color: "#bc9458",}} /> Não conseguiu resultado com nenhuma dieta milagrosa</li>
             </ul>
           </div>
         </div>

@@ -1,0 +1,96 @@
+@import '../../style-config/variable.scss';
+@import '../../style-config/mixins.scss';
+
+.intro-section {
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0, .5);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    .vector-bg {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-image: url("../../images/main-background.jpeg");
+        background-size: cover;
+        background-position: center right;
+        background-repeat: no-repeat;
+        opacity: 58%;
+        z-index: -1;
+        @include laptop-screen {
+            background-position: center center; 
+        }
+    }
+    .headline-content {
+        margin-top: 1rem;
+        text-align: center;
+        color: white;
+
+        max-width: 1200px;
+        margin-right: auto;
+        margin-left: auto;
+
+        text-shadow: black 0.1em 0.1em 0.2em;
+        line-height: 2rem;
+        @include laptop-screen {
+            width: 100%;
+            padding: 2rem;
+        }
+    }
+    h1 {
+        font-size: 4rem;
+        letter-spacing: 1px;
+        line-height: 4rem;
+        @include laptop-screen {
+            font-size: 3rem;
+        }
+    }
+    p {
+        font-size: 1.5rem;
+        font-weight: 500;
+        letter-spacing: 2px;
+        line-height: 2rem;
+        @include laptop-screen {
+            padding: 0;
+        }
+    }
+    .vsl {
+        margin-top: 4rem;
+        width: 100%;
+        height: 360px;
+        padding: 0px 250px 0px 250px;
+        @include laptop-screen {
+            padding: 0px;
+        }
+    }
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
+    .pay {
+        margin: 2rem;
+        @include celular-screen {
+            margin: 2rem 0 2rem 0;
+        }
+        button {
+            border: none;
+            border-radius: 14px;
+            width: auto;
+    
+            background: rgb(188,148,88);
+            background: linear-gradient(130deg, rgb(188,148,88) 30%, rgba(218,181,136,1) 70%);
+            color: white;
+            padding: 0.5rem 2.5rem 0.5rem 2.5rem;
+    
+            font-size: 2rem;
+            font-weight: 700;
+            text-shadow: 0px 0px 9px rgba(0,0,0,0.3);
+    
+            box-shadow: 0px 0px 3px 0px $brow-light;
+        }
+            button:focus {
+                background-color: #dab588;
+            }
+    }
+}
